@@ -14,20 +14,14 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Login />
-        {/* Authentication */}
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-
-        {/* Main Pages */}
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/map" element={<MapPage />} />
         <Route path="/reports" element={<Reports />} />
         <Route path="/emergency" element={<Emergency />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
-
-        {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </HashRouter>
